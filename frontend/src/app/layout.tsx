@@ -33,12 +33,13 @@ export default function RootLayout({
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://teddyoweh.net" />
     <meta property="og:image" content={teddyimg.src} />
-    <meta property="og:description" 
-  content="Software Engineer (ML), CS (Artificial Intelligence & Data Science) + Math." />
-  <meta property="og:site_name" content="TeddyOweh" />
+    <meta property="og:description" content="Software Engineer (ML), CS (Artificial Intelligence & Data Science) + Math." />
+    <meta property="og:site_name" content="TeddyOweh" />
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" />
+<meta name="robots" content="index, follow"></meta>
+<meta name="robots" content="all"></meta>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Pen+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
       </head>
     
