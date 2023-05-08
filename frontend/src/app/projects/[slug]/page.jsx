@@ -12,14 +12,14 @@ import nasares from '../../assets/nasares.jpeg'
 import nasacoding from '../../assets/nasacoding.jpeg'
 import {projects,filters,prlanguagesa} from '../pagedata'
 import { useRouter } from 'next/navigation';
-export default function ProjectsPage({params,slug}){
+export default function ProjectsPage({params}){
     function getProjectBySlug(slug) {
         const project = projects.find(project => project.slug === slug);
         return project ? project : null;
     }
     const router = useRouter();
       
- 
+    const { slug } = params
     const data = getProjectBySlug(slug)
   
     console.log(slug)
@@ -53,7 +53,7 @@ export default function ProjectsPage({params,slug}){
                           {
                                         data.languages.map((prlanguage,index)=>{
                                             return (
-                                                <div className='pr-dvi'>
+                                                <div key={index}className='pr-dvi'>
                                                 {prlanguagesa(prlanguage).div}
                                                 {
                                                     index!=data.languages.length-1?
@@ -73,7 +73,7 @@ export default function ProjectsPage({params,slug}){
                             {
                                 data.tags.map((tag,index)=>{
                                     return (
-                                        <div className='tag'>
+                                        <div key={index} className='tag'>
                                             <label htmlFor="">{tag}</label>
                                         </div>
                                     )
