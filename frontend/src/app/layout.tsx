@@ -14,7 +14,7 @@ import { log } from 'console'
 export const metadata = {
   title: 'Teddy Oweh - Software Engineer (ML)',
   description: 'Software Engineer (ML), CS (Artificial Intelligence & Data Science) + Math.',
-  icon:'./assets/TO.png'
+ 
 
 }
 
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
       <title>Teddy Oweh - Software Engineer (ML)</title>
-      <link rel="icon" href={logo.src} />
+      {/* <link rel="icon" href={logo.src} sizes='80x80' /> */}
       <meta property="og:title" content="Teddy Oweh - Software Engineer (ML)" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://teddyoweh.net" />

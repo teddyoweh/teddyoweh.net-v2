@@ -139,6 +139,16 @@ const projects = [
         sourcecode:'https://github.com/teddyoweh/battleofthedorms'
     },
     {
+        title: "teddyoweh.net",
+        description:'My Current Website.',
+        long_description:'My Current Website.',
+        slug:'teddyoweh.net',
+        languages:['Next JS','Javascript'],
+        tags:['Frontend & UI Development','Full Stack Development','Libraries / Packages / Modules / Applications / Frameworks'],
+        sourcecode:'https://github.com/teddyoweh/teddyoweh.net-v2',
+        website:'https://teddyoweh.net'
+    },
+    {
         title: "teddyoweh.net v1 - Legacy Code",
         description:'My Previous Website.',
         long_description:'My Previous Website.',
