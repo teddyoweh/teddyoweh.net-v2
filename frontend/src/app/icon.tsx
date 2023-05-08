@@ -7,6 +7,7 @@ export const size = {
 export const contentType = 'image/png';
 export const runtime = 'edge';
 import logo from './assets/TO.png'
+import Image from 'next/image';
 
 export default function icon() {
   return new ImageResponse(
@@ -23,7 +24,7 @@ export default function icon() {
           color: 'white',
         }}
       >
-         <img src={logo.src} alt="Teddy Oweh Logo" />
+         <Image src={logo.src} width={400} height={400} alt="Teddy Oweh Logo" />
       </div>
     ),
     size,
