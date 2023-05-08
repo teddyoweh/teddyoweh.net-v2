@@ -31,7 +31,6 @@ export default function Projects(){
             const projectText = `${title.toLowerCase()} ${description.toLowerCase()} ${tags.join(' ').toLowerCase()}`;
             return projectText.includes(searchTerm);
         });
-        
         setProjectList(filteredProjects);
     }
     
@@ -54,7 +53,7 @@ export default function Projects(){
                 <div className="projects-img">
                     <img src={nasacoding.src} alt="" />
                     <label htmlFor="">
-                            NASA USLI '23 / <a target='_blank'href="https://www.nasa.gov/centers/marshall/home/index.html">NASA Marshall Space Flight Center<span>↗</span></a>
+                            NASA USLI &apos;23 / <a target='_blank'href="https://www.nasa.gov/centers/marshall/home/index.html">NASA Marshall Space Flight Center<span>↗</span></a>
                         </label>
                 </div>
             </div>
@@ -78,7 +77,7 @@ export default function Projects(){
 
                 </div>
                 <div className="projects-list">
-                    <label htmlFor="" className='header'>{activefilter} Project's</label>
+                    <label htmlFor="" className='header'>{activefilter} Project&apos;s</label>
                     <hr />
                     {
                         projectList.map((project,index)=>{

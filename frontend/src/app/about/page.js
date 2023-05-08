@@ -31,7 +31,7 @@ export default function AboutPage() {
                     </div>
                     <div className="about-teddy">
                         <p>
-                            I am a software engineer with a background in computer science and mathematics. I am currently a undergraduate student at Tarleton State University, pursuing a Bachelors's degree in Computer Science with a focus on Artificial Intelligence and Data Science.
+                            I am a software engineer with a background in computer science and mathematics. I am currently a undergraduate student at Tarleton State University, pursuing a Bachelors degree in Computer Science with a focus on Artificial Intelligence and Data Science.
                              <br />
                              <br />
                              I am also current leading a research team <a href="https://tarleton.edu">@Tarleton State - Machine Intelligence Security and Research Lab  <span>↗</span> </a>,

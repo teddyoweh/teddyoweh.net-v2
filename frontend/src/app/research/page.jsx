@@ -31,7 +31,7 @@ export default function Research(){
                     <div className="research-img">
                         <img src={researchteam.src} alt="" />
                         <label htmlFor="">
-                            Tarleton Pers Research Symposium '23 / <a target='_blank'href="https://www.tarleton.edu/president/about-dr-hurley-2/">Dr. James Hurley<span>↗</span></a>
+                            Tarleton Pers Research Symposium &apos;23 / <a target='_blank'href="https://www.tarleton.edu/president/about-dr-hurley-2/">Dr. James Hurley<span>↗</span></a>
                         </label>
                     </div>
                     <div className="research-list">
