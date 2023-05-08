@@ -12,14 +12,15 @@ import nasares from '../../assets/nasares.jpeg'
 import nasacoding from '../../assets/nasacoding.jpeg'
 import {researches} from '../page-data'
 import { useRouter } from 'next/navigation';
-export default function ResearchPage({params}){
+export default function ResearchPage({params,slug}){
     function getResearchBySlug(slug) {
         const research = researches.find(research => research.slug === slug);
         return research ? research : null;
     }
     const router = useRouter();
       
-    const { slug } = params
+    // const { slug } = params
+     
     const data = getResearchBySlug(slug)
   
  

@@ -12,14 +12,14 @@ import nasares from '../../assets/nasares.jpeg'
 import nasacoding from '../../assets/nasacoding.jpeg'
 import {projects,filters,prlanguagesa} from '../pagedata'
 import { useRouter } from 'next/navigation';
-export default function ProjectsPage({params}){
+export default function ProjectsPage({params,slug}){
     function getProjectBySlug(slug) {
         const project = projects.find(project => project.slug === slug);
         return project ? project : null;
     }
     const router = useRouter();
       
-    const { slug } = params
+ 
     const data = getProjectBySlug(slug)
   
     console.log(slug)
