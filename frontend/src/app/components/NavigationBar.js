@@ -11,16 +11,15 @@ export default function NavigationBar(){
     const pathname = pathnamed()
 
      return (
-        
- 
-
-
         <nav className="">
             <div className="teddy-name">
                 <Link href='./'>
+                    <>
+              
                     <label> Teddy Oweh.</label>
+                    <label> TO</label>
+                    </>
                 </Link> 
-
             </div>
             <div className="nav-links">
                 <div  className={pathname=='about'?"nav-link active":"nav-link"}>
@@ -56,6 +55,10 @@ export default function NavigationBar(){
                 
 
             </div>
+            <a className="menuicon">
+
+            <i class='bx bx-menu'></i>
+            </a>
 
 
         </nav>

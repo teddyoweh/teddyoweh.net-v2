@@ -271,3 +271,19 @@
         color: #333;
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    .projects{
+        width: 90%;
+        .project-filters{
+            width: 100%;
+    overflow-x: scroll;
+    max-width: 100%;
+    flex-wrap: nowrap !important;
+            .project-filter{
+                font-size: 12px;
+            }
+        }
+    }
+}

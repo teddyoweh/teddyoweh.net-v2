@@ -14,6 +14,9 @@ padding: 30px 10px;
         font-size: 30px;
         font-weight: 500;
         color: #333;
+        &:nth-child(2){
+            display: none;
+        }
 
     }
 }
@@ -21,7 +24,10 @@ padding: 30px 10px;
 .nav-links{
     display: flex;
     flex-direction: row;
-  
+    a.menuicon{
+        display: none;
+         
+    }
     .nav-link{
         display: flex;
         flex-direction:column;
@@ -307,6 +313,8 @@ footer{
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    flex-wrap: wrap;
+    width: 70%;
 }
 .pr-dv-divider{
     height: 10px;
@@ -336,3 +344,45 @@ footer{
         padding-left: 6px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    nav{
+        width: 90%;
+        .teddy-name{
+            label{
+                font-family: 'Nanum Pen Script', cursive;
+                font-size: 30px;
+                font-weight: 500;
+                color: #333;
+                content:'TO';
+                &:nth-child(2){
+                    display: block;
+                }
+                &:nth-child(1){
+                    display: none;
+                }
+        
+            }
+        }
+        .nav-links{
+            display: none;
+        }
+        a.menuicon{
+            display: block;
+            i{
+                font-size: 30px;
+                color: #333;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    transition: 0.4s;
+                    color: #555;
+                }
+            }
+        }
+    }
+    
+  footer{
+    width: 90%;
+  }
+  }

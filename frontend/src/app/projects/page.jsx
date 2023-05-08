@@ -39,7 +39,7 @@ export default function Projects(){
              <head>
                 <title>Projects • Teddy Oweh</title>
             </head>
-                <NavigationBar/>
+            <NavigationBar/>
             <div className='projects slide-up'>
             <div className="projects-header">
                     <label htmlFor="">

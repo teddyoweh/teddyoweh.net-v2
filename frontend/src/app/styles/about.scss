@@ -93,3 +93,25 @@ padding-top: 50px;
     }
 }
 }
+
+
+@media screen and (max-width: 600px) {
+    .about{
+        width: 90%;
+        .about-content{
+            flex-direction: column;
+            .about-img{
+                img{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .about-teddy{
+                width: 100%;
+                padding: 20px 0px;
+            }
+        }
+    }
+}
