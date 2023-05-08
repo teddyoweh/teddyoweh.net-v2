@@ -67,7 +67,7 @@ export default function Projects(){
                     {
                         filters.map((filter,index)=>{
                             return (
-                                <div className={activefilter==filter? "project-filter active":"project-filter"} onClick={()=>toggleFilter(filter)}>
+                                <div key={index} className={activefilter==filter? "project-filter active":"project-filter"} onClick={()=>toggleFilter(filter)}>
                                     <label htmlFor="">{filter}</label>
                                 </div>
                             )
@@ -85,7 +85,7 @@ export default function Projects(){
                             return (
                                 <>
                                 
-                                <div className={activefilter=='All' || project.tags.includes(activefilter)? "teddys-project":"slide-down project-hide"}>
+                                <div key={index} className={activefilter=='All' || project.tags.includes(activefilter)? "teddys-project":"slide-down project-hide"}>
                                 <label htmlFor="">{project.title}</label>
                                 <p>{project.description}</p>
                                 <div className='pr-dv'>
@@ -95,7 +95,7 @@ export default function Projects(){
                                     {
                                         project.languages.map((prlanguage,index)=>{
                                             return (
-                                                <div className='pr-dvi'>
+                                                <div key={index} className='pr-dvi'>
                                                 {prlanguagesa(prlanguage).div}
                                                 {
                                                     index!=project.languages.length-1?
