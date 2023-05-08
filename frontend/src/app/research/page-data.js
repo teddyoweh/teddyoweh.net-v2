@@ -68,7 +68,7 @@ const researches = [
     {
         title:'Integrating Markov Chains and Naïve Bayesian Classification for Rapid Weapon Pairing in Naval Warfare - NSWCDD AI & ML Innovation',
         desc:'Developed algorithms for automated scheduling and coordination of advanced weapon systems in naval warfare by integrating Markov Chains and Naïve Bayesian Classification. The methods involve using a Markov chain to track variables and predict future states, and employing supervised learning and statistical classification to classify data and optimize weapon pairings.',
-        long_desc:'develops algorithms for automated scheduling and coordination of advanced weapon systems in naval warfare by integrating Markov Chains and Naïve Bayesian Classification. The methods involve using a Markov chain to track variables and predict future states, and employing supervised learning and statistical classification to classify data and optimize weapon pairings.',
+        long_desc:'Developed algorithms for automated scheduling and coordination of advanced weapon systems in naval warfare by integrating Markov Chains and Naïve Bayesian Classification. The methods involve using a Markov chain to track variables and predict future states, and employing supervised learning and statistical classification to classify data and optimize weapon pairings.',
         img:navyai,
         slug:'nswcdd-ai',
         img1:navymsr,
