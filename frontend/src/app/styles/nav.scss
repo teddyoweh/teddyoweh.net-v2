@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Pen+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 30px 10px;
+ 
+ width: 50%;
+.teddy-name{
+    label{
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 30px;
+        font-weight: 500;
+        color: #333;
+
+    }
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+  
+    .nav-link{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-decoration: none;
+        margin-left: 10px;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: #7e7e7e;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 0 10px;
+            cursor: pointer;
+            
+        }
+        span{
+            padding: 3px;
+            background-color: transparent;
+            width: 0%;
+            transition: 0.5s;
+            cursor: pointer;
+    
+        }
+        &:hover{
+            a{
+                color: #000000;
+                cursor: pointer;
+            }
+            span{
+                transition: 0.5s;
+                padding: 2px;
+                background-color: #333;
+                width: 100%;
+                cursor: pointer;
+        
+            }
+ 
+        }
+        &.active{
+      
+            a{
+                color: #000000;
+                cursor: pointer;
+            }
+            span{
+                transition: 0.5s;
+                padding: 2px;
+                background-color: #333;
+                width: 100%;
+                cursor: pointer;
+        
+            }
+    
+        }
+    }
+
+}
+
+}
+
+
+footer{
+    width: 50%;
+    padding: 40px 0;
+    .footer-header{
+        font-size:25px;
+        font-family: poppins;
+        font-weight: 500;
+
+    }
+    .footer-content{
+        p{
+            padding-top: 10px;
+            font-family: poppins;
+            font-size: 17px;
+            font-weight: 400;
+            color: #444;
+        }
+        a{
+            border-style: solid;
+            border-width: 0px 0px 1px;
+            border-color: #444;
+            transition: 0.4s;
+            margin-right: 10px;
+            &:hover{
+                transition: 0.4s;
+                border-width: 0px 0px 2px;
+                border-color: #333;
+            }
+            span{
+                font-size: 14px;
+                font-family: system-ui;
+            }
+        }
+        .socials{
+            margin-top: 20px;
+        }
+    }
+}
+.slide-up{
+    animation-name: slideFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.slide-up1{
+    animation-name: slideFadeUp;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes slideFadeUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+}
+.slide-down {
+    animation-name: slideFadeDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideFadeDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+
+.prg-language{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-right:6px ;
+    span{
+        height: 8px;
+        width: 8px;
+        border-radius: 100%;
+        margin-right: 6px;
+        &.python{
+            background-color: #3572A5;
+        }
+        &.javascript{
+            background-color: #f1e05a;
+        }
+        &.c{
+            background-color: #555555;
+        }
+        &.next{
+            background-color: #000000;
+        }
+        &.react{
+            background-color: #61dafb;
+        }
+        &.node{
+            background-color: #026e00;
+        }
+        &.shell{
+            background-color: #89e051;
+        }
+        &.nest{
+            background-color: #E0234E;
+        }
+        &.vue{
+            background-color: #41b883;
+        }
+        &.html{
+            background-color: #e34c26;
+        }
+        &.css{
+            background-color: #563d7c;
+        }
+        &.java{
+            background-color: #b07219;
+        }
+        &.c{
+            background-color: #555555;
+        }
+        &.csharp{
+            background-color: #178600;
+        }
+        &.php{
+            background-color: #4F5D95;
+        }
+        &.ruby{
+            background-color: #701516;
+        }
+        &.typescript{
+            background-color: #2b7489;
+        }
+        &.swift{
+            background-color: #ffac45;
+        }
+        &.go{
+            background-color: #00ADD8;
+        }
+        &.kotlin{
+            background-color: #F18E33;
+        }
+        &.rust{
+            background-color: #dea584;
+        }
+        &.scala{
+            background-color: #c22d40;
+        }
+        &.r{
+            background-color: #198CE7;
+        }
+        &.dart{
+            background-color: #00B4AB;
+        }
+        &.elixir{
+            background-color: #6e4a7e;
+        }
+        &.haskell{
+            background-color: #5e5086;
+        }
+        &.julia{
+            background-color: #a270ba;
+        }
+        &.jupyter{
+            background-color: #DA5B0B;
+        }
+    }
+    label{
+        font-size: 13px !important;
+        font-family: poppins;
+        font-weight: 400 !important;
+        color: #666;
+    }
+     
+}
+.pr-dv{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    a.viewbtn{
+        border-style: solid;
+        margin-top: 10px;
+        padding: 6px 12px;
+        border-width: 1px;
+        border-color: #222;
+        transition: 0.4s;
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover{
+            transition: 0.4s;
+      
+            background-color: #333;
+            color: #fff;
+        }
+        span{
+            font-size: 14px;
+            font-family: system-ui;
+        }
+    }
+}
+.pr-dvi{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.pr-dv2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.pr-dv-divider{
+    height: 10px;
+    width: 1px;
+    background-color: #666;
+    margin: 0 10px;
+}
+.top-back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    i{
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover{
+            transition: 0.4s;
+            color: #555;
+        }
+    }
+    label{
+        font-family: poppins;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        padding-left: 6px;
+    }
+}

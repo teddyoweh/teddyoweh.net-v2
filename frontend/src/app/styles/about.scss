@@ -1,0 +1,95 @@
+.about{
+    width: 50%;
+padding-top: 50px;
+.about-header{
+    label{
+        font-family: poppins;
+        font-size: 40px;
+        font-weight: 600;
+        color: #333;
+    }
+
+}
+.about-bio{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    p{
+        font-family: poppins;
+        font-size: 17px;
+        font-weight: 400;
+        color: #333;
+    }
+    a{
+        border-style: solid;
+        border-width: 0px 0px 1px;
+        border-color: #222;
+        transition: 0.4s;
+        &:hover{
+            transition: 0.4s;
+            border-width: 0px 0px 2px;
+            border-color: #333;
+        }
+        span{
+            font-size: 14px;
+            font-family: system-ui;
+        }
+    }
+  
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    .about-img{
+        img{
+            width: 300px;
+            height: 540px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    .about-teddy{
+        width: 60%;
+        padding: 20px 40px;
+        p{
+            a{
+                border-style: solid;
+                border-width: 0px 0px 1px;
+                border-color: #222;
+                transition: 0.4s;
+                &:hover{
+                    transition: 0.4s;
+                    border-width: 0px 0px 2px;
+                    border-color: #333;
+                }
+                span{
+                    font-size: 14px;
+                    font-family: system-ui;
+                }
+            }
+            padding-bottom: 20px;
+        }
+    }
+    a.viewbtn{
+        border-style: solid;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-width: 1px;
+        border-color: #222;
+        transition: 0.4s;
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover{
+            transition: 0.4s;
+      
+            background-color: #333;
+            color: #fff;
+        }
+        span{
+            font-size: 14px;
+            font-family: system-ui;
+        }
+    }
+}
+}

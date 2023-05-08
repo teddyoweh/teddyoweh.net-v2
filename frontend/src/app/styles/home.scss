@@ -1,0 +1,91 @@
+.hero{
+width: 50%;
+padding-top: 50px;
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+      
+        
+        width: 100%;
+        .hero-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 10px;
+            label{
+                font-family: poppins;
+                font-size:80px;
+                font-weight: 700;
+                color: #333; 
+                   
+                span{
+                    font-family:  serif, cursive;
+                    font-style: italic;
+                    font-weight:300;
+                }
+            }
+            
+        }
+        .hero-bio{
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+            p{
+                font-family: poppins;
+                font-size: 17px;
+                font-weight: 400;
+                color: #333;
+            }
+            a{
+                border-style: solid;
+                border-width: 0px 0px 1px;
+                border-color: #222;
+                transition: 0.4s;
+                &:hover{
+                    transition: 0.4s;
+                    border-width: 0px 0px 2px;
+                    border-color: #333;
+                }
+                span{
+                    font-size: 14px;
+                    font-family: system-ui;
+                }
+            }
+        }
+        .teddy-socials{
+            padding: 40px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a{
+                cursor: pointer;
+    margin-right: 20px;
+    background: #f6f6f6;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: 0.4s;
+                i{
+                    font-size: 40px;
+                    color: #999;
+                    transition: 0.4s;
+                   
+                }
+                &:hover{
+                    
+                    transition: 0.4s;
+                    transform: scale(1.2);
+                    i{
+                        transition: 0.4s;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}
