@@ -101,13 +101,13 @@ export default function NavigationBar(){
                     <span/>
                 </div>
                 <div className={pathname=='involvments'?"nav-link active":"nav-link"}>
-                    <Link href='./about'>
+                    <Link href='./involvements'>
                         <label for="">Involvements</label>
                     </Link>
                     <span/>
                 </div>
-                <div className="nav-link">
-                    <Link href='./about'>
+                <div className={pathname=='docs'?"nav-link active":"nav-link"}>
+                    <Link href='./docs'>
                         <label for="">Docs</label>
                     </Link>
                     <span/>

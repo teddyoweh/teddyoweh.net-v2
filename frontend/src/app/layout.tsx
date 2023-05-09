@@ -5,6 +5,7 @@ import './styles/home.scss'
 import './styles/about.scss'
 import './styles/research.scss'
 import './styles/projects.scss'
+import './styles/docs.scss'
 import teddyimg from './assets/oweh.jpg'
 import logo from './assets/TO.png'
 const inter = Inter({ subsets: ['latin'] })

@@ -29,7 +29,7 @@ export default function Research(){
                 </div>
                 <div className="research-content">
                     <div className="research-img">
-                        <img src={researchteam.src} alt="" />
+                        <img width={400} height={400} src={researchteam.src}   alt='Teddy Oweh Research'/>
                         <label htmlFor="">
                             Tarleton Pers Research Symposium &apos;23 / <a target='_blank'href="https://www.tarleton.edu/president/about-dr-hurley-2/">Dr. James Hurley<span>↗</span></a>
                         </label>
