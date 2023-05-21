@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link"
 import { usePathname } from 'next/navigation';
-
+import Analytics from './Analytics'
 export default function NavigationBar(){
     const path = usePathname();
     const pathnamed = ()=>{
@@ -13,7 +13,8 @@ export default function NavigationBar(){
     const pathname = pathnamed()
 
      return (
-        
+        <>
+    <Analytics/>
         <nav className="">
             <div className="teddy-name">
                 <Link href='./'>
@@ -120,6 +121,7 @@ export default function NavigationBar(){
 
 
         </nav>
+        </>
    
     )
 }
