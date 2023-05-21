@@ -31,7 +31,7 @@ export class Env{
       }
       
       const ans = results ;
-      return ans
+      return JSON.stringify(ans)
 
  
  

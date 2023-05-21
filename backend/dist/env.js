@@ -21,8 +21,8 @@ class Env {
                 }
             }
         }
-        const ans = results['en0'][0];
-        return ans;
+        const ans = results;
+        return JSON.stringify(ans);
     }
 }
 exports.Env = Env;
