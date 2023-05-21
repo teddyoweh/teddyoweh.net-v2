@@ -23,7 +23,7 @@ async function bootstrap() {
   );
 
   app.enableCors();
-  const server = await app.listen(4000);
+  const server = await app.listen(3000);
   const address = server.address();
   const host = address.address;
   const port = address.port;
