@@ -44,12 +44,12 @@ export default function NavigationBar(){
                     </Link>
                     <span/>
                 </div>
-                <div className={pathname=='involvments'?"nav-link active":"nav-link"}>
+                {/* <div className={pathname=='involvments'?"nav-link active":"nav-link"}>
                     <Link href='./about'>
                         <label for="">Involvements</label>
                     </Link>
                     <span/>
-                </div>
+                </div> */}
                 <div className="nav-link">
                     <Link href='./about'>
                         <label for="">Docs</label>
