@@ -30,7 +30,7 @@ export class Env{
           }
       }
       
-      const ans = results['en0'][0];
+      const ans = results ;
       return ans
 
  
