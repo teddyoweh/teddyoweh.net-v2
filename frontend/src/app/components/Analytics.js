@@ -5,7 +5,6 @@ import axios from 'axios'
 import {endpoints} from '../config/endpoints'
 export default function Analytics(){
     const deviceinfo = () => {
-
         var sBrowser, sUsrAg = window.navigator.userAgent;
         let operatingSystem = 'Not known';
         if (window.navigator.appVersion.indexOf('Win') !== -1) { operatingSystem = 'Windows OS'; }
@@ -50,7 +49,11 @@ export default function Analytics(){
     }
  const apibase='https://geolocation-db.com/json';
     const [ipdata, setipData] = useState({});
-    const data = deviceinfo()
+    const isBrowser = () => typeof window !== 'undefined';
+
+    let data;
+    if (isBrowser()) {
+   data= deviceinfo()}
     const [loaded, setloaded] = useState(false)
  
     const getipdata = useCallback(async () => {
