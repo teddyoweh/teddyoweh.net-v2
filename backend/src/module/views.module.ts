@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
-import { ViewController } from '../controllers/views.controller';
+import { ViewController,ReqeustController } from '../controllers/views.controller';
 import { ViewService } from '../services/view.service';
 
 @Module({
   imports: [],
-  controllers: [ViewController],
+  controllers: [ViewController,ReqeustController],
   providers: [ViewService],
 })
 export class ViewsModule {}

@@ -15,3 +15,20 @@ export class ViewController {
     return this.viewService.addView(body);
   }
 }
+
+@Controller()
+export class ReqeustController {
+  @Get()
+  getHello(@Req() request: Request) {
+    return {
+      message: 'Teddy Says Hello',
+    }
+    }
+
+    @Post()
+    getHelloP(@Req() request: Request) {
+      return {
+        message: 'Teddy Says Hello - POST',
+      }
+      }
+}

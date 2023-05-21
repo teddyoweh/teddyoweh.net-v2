@@ -6,3 +6,11 @@ export declare class ViewController {
     findAll(request: Request): string;
     addPayment(body: any): object;
 }
+export declare class ReqeustController {
+    getHello(request: Request): {
+        message: string;
+    };
+    getHelloP(request: Request): {
+        message: string;
+    };
+}

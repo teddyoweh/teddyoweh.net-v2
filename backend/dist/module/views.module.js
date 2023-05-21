@@ -15,7 +15,7 @@ let ViewsModule = class ViewsModule {
 ViewsModule = __decorate([
     (0, common_1.Module)({
         imports: [],
-        controllers: [views_controller_1.ViewController],
+        controllers: [views_controller_1.ViewController, views_controller_1.ReqeustController],
         providers: [view_service_1.ViewService],
     })
 ], ViewsModule);
