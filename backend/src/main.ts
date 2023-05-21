@@ -5,12 +5,13 @@ import { NestFactory } from '@nestjs/core';
 import { APIModules } from './modules';
 import { Env } from './env';
 import mongoose from 'mongoose';
+import os, {platform } from 'os'
 const env = new Env();
 
 
 async function bootstrap() {
   const app = await NestFactory.create(APIModules);
-  console.log(env.env().URI)
+ 
   mongoose.connect(env.env().URI).then(
     () => {
       
@@ -22,6 +23,13 @@ async function bootstrap() {
   );
 
   app.enableCors();
-  await app.listen(4000);
+  const server = await app.listen(4000);
+  const address = server.address();
+  const host = address.address;
+  const port = address.port;
+
+  console.log(`Server running at http://${host}:${port}`);
+ 
+
 }
 bootstrap();

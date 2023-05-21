@@ -8,14 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.APIModules = void 0;
 const common_1 = require("@nestjs/common");
-const app_module_1 = require("./module/app.module");
 const views_module_1 = require("./module/views.module");
 let APIModules = class APIModules {
 };
 APIModules = __decorate([
     (0, common_1.Module)({
         imports: [
-            app_module_1.AppModule,
             views_module_1.ViewsModule,
         ],
     })
