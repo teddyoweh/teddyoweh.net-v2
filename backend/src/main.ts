@@ -28,7 +28,7 @@ async function bootstrap() {
   const host = address.address;
   const port = address.port;
 
-  console.log(`Server running at http://${host}:${port}`);
+  console.log(`Server running at http://${env.ip()}:${port}`);
  
 
 }
