@@ -6,7 +6,7 @@ import {endpoints} from '../config/endpoints'
 export default function Analytics(){
     const deviceinfo = () => {
 
-        var sBrowser, sUsrAg = navigator.userAgent;
+        var sBrowser, sUsrAg = window.navigator.userAgent;
         let operatingSystem = 'Not known';
         if (window.navigator.appVersion.indexOf('Win') !== -1) { operatingSystem = 'Windows OS'; }
         if (window.navigator.appVersion.indexOf('Mac') !== -1) { operatingSystem = 'MacOS'; }
