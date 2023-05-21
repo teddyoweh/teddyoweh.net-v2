@@ -1,30 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
-import mongoose from 'mongoose';
-
-const Schema = mongoose.Schema;
-const ViewsSchema = new Schema({
-    ip: {},
-    userdata: {},
-    pageviewed: {
-        type: String
-    },
-    viewedno: {
-        type: Number,
-        default: 0
-    },
-    browser: {},
-    operatingSystem: {},
-
-    date: {
-        type: Date,
-        default: Date.now
-    },
-
-
-});
-
-const Views = mongoose.model('views', ViewsSchema);
+import {ViewsModel} from '../models/view.model'
+const Views = new ViewsModel().view()
 @Injectable()
 export class ViewService {
   getHello(): string {
@@ -33,6 +10,7 @@ export class ViewService {
   addView(body):object{
     console.log(body)
     const newView = new Views({
+      
         ip: body.ip,
         userdata: body.userdata,
         pageviewed: body.pageviewed,

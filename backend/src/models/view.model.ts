@@ -3,7 +3,7 @@
 import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
-// Addition of  the Schema for the User model
+ 
 
 const ViewsSchema = new Schema({
     ip: {},
@@ -27,5 +27,10 @@ const ViewsSchema = new Schema({
 });
 
 const Views = mongoose.model('views', ViewsSchema);
+export class ViewsModel{
+    view(){
+        return Views
+    }
+}
 
-export {Views}
+// export const Views;
