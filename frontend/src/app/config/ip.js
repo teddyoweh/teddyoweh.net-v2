@@ -1,3 +1,3 @@
 "use client"
-const serverip = 'http://localhost:4000'
+const serverip = 'http://teddyoweh-backend.up.railway.app'
 export {serverip}
