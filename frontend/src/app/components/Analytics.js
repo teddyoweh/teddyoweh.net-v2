@@ -1,9 +1,11 @@
 "use client"
 import React, {Component,useState, useEffect,useCallback} from 'react';
 import axios from 'axios'
- 
+import { usePathname } from 'next/navigation';
+
 import {endpoints} from '../config/endpoints'
 export default function Analytics(){
+    const navpath = usePathname()
     const deviceinfo = () => {
         var sBrowser, sUsrAg = window.navigator.userAgent;
         let operatingSystem = 'Not known';
@@ -83,7 +85,7 @@ export default function Analytics(){
       
       
     
-    },[  getipdata])
+    },[  getipdata,navpath])
     
      
         
