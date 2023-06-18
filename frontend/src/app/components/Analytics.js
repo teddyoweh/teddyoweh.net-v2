@@ -57,7 +57,7 @@ export default function Analytics(){
     const [loaded, setloaded] = useState(false)
  
     const getipdata = useCallback(async () => {
-      axios.get('https://ipapi.co/json/').then((res) => {
+      axios.get('https://ipapi.co/json/').then(async (res) => {
         
  
      
@@ -66,7 +66,7 @@ export default function Analytics(){
           setloaded(true)
           data['userdata']=res.data
    
-     axios.post(endpoints['tracker'] ,data).then((res2) => {
+    await axios.post(endpoints['tracker'] ,data).then((res2) => {
       
         localStorage.setItem('viewid',JSON.stringify(res2.data))
 
