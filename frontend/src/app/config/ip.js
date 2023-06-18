@@ -1,4 +1,4 @@
 "use client"
 // const serverip = 'http://teddyoweh-backend.up.railway.app'
-const serverip = proccess.env.IP
+const serverip = process.env.IP
 export {serverip}
