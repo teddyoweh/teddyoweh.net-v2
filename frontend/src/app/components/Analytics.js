@@ -90,7 +90,7 @@ export default function Analytics({url}){
       
       
     
-    },[])
+    },[getipdata])
     
      
         
