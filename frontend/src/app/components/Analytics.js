@@ -2,11 +2,15 @@
 import React, {Component,useState, useEffect,useCallback} from 'react';
 import axios from 'axios'
 import { usePathname } from 'next/navigation';
-
+import { v4 } from "uuid";
+ 
 import {endpoints} from '../config/endpoints'
-export default function Analytics(){
+export default function Analytics({url}){
     const navpath = usePathname()
     const deviceinfo = () => {
+        if(localStorage.getItem('browserid')==null){
+            localStorage.setItem('browserid',v4())
+        }
         var sBrowser, sUsrAg = window.navigator.userAgent;
         let operatingSystem = 'Not known';
         if (window.navigator.appVersion.indexOf('Win') !== -1) { operatingSystem = 'Windows OS'; }
@@ -38,7 +42,7 @@ export default function Analytics(){
             sBrowser = "unknown";
         }
         let userdata = null
-        const pageviewed = window.location.href
+        const pageviewed = url
     
     
         return {
@@ -46,6 +50,7 @@ export default function Analytics(){
             browser: sBrowser,
             userdata: userdata,
             operatingSystem: operatingSystem,
+            browserid:localStorage.getItem('browserid')
     
         }
     }
@@ -85,7 +90,7 @@ export default function Analytics(){
       
       
     
-    },[  getipdata,navpath])
+    },[])
     
      
         

@@ -1,20 +1,23 @@
 'use client'
 import { useState } from "react";
 import Link from "next/link"
-import { usePathname } from 'next/navigation';
+import { usePathname,asPath} from 'next/navigation';
 import Analytics from './Analytics'
+ 
 export default function NavigationBar(){
     const path = usePathname();
+ 
     const pathnamed = ()=>{
         return path.split('/')[1]
 
     }
+ 
     const [open,setOpen] = useState(null)
     const pathname = pathnamed()
 
      return (
         <>
-    <Analytics/>
+    <Analytics url={window.location.hostname +path}/>
         <nav className="">
             <div className="teddy-name">
                 <Link href='./'>
