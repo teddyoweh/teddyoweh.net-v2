@@ -11,22 +11,15 @@ export default function NavigationBar(){
         return path.split('/')[1]
 
     }
-    const [win,setWin] = useState(null)
+ 
  
     const [open,setOpen] = useState(null)
     const pathname = pathnamed()
-    const getWindow = () => {
-        setWin(window)
-      };
-
-      useState(()=>{
-        setWin(window)
-
-      },[])
+ 
      return (
-        win &&
+    
         <>
-    <Analytics url={win.location.hostname +path}/>
+    <Analytics url={"teddyoweh.net" +path}/>
         <nav className="">
             <div className="teddy-name">
                 <Link href='./'>
