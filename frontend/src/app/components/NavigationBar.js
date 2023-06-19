@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 import Link from "next/link"
-import { usePathname,asPath} from 'next/navigation';
+import { usePathname} from 'next/navigation';
 import Analytics from './Analytics'
  
 export default function NavigationBar(){
@@ -11,13 +11,22 @@ export default function NavigationBar(){
         return path.split('/')[1]
 
     }
+    const [win,setWin] = useState(null)
  
     const [open,setOpen] = useState(null)
     const pathname = pathnamed()
+    const getWindow = () => {
+        setWin(window)
+      };
 
+      useState(()=>{
+        setWin(window)
+
+      },[])
      return (
+        win &&
         <>
-    <Analytics url={window.location.hostname +path}/>
+    <Analytics url={win.location.hostname +path}/>
         <nav className="">
             <div className="teddy-name">
                 <Link href='./'>
@@ -54,7 +63,7 @@ export default function NavigationBar(){
                     <span/>
                 </div> */}
                 <div className="nav-link">
-                    <Link href='./about'>
+                    <Link href='./docs'>
                         <label for="">Docs</label>
                     </Link>
                     <span/>
