@@ -14,8 +14,19 @@ const projects = [
 
     },
     {
+        title: "Stochastic Processes Disease Modelling",
+        description: "Presented new mathematical models that extend methodology which incorporates relationships (edges) between indivduals (nodes) to create a network graph on which a disease outbreaks.",
+        long_description:"Presented new mathematical models that extend methodology which incorporates relationships (edges) between indivduals (nodes) to create a network graph on which a disease outbreaks.",
+        slug:'Stochastic-Processes-Disease-Modelling',
+        languages:['Python','Jupyter Notebook'],
+        tags:['Algorithms / Dynamical Programming','Libraries'],
+        sourcecode:'https://github.com/teddyoweh/Stochastic-Processes-Disease-Modelling',
+ 
+
+    },
+    {
         title: "WHOTAI",
-        description:'Custom Built Random Forest + Decision Tree AI Algoritmns & Parallel Programming to  simulate / play Naija Whot (African Card Game) - Similar to Uno Card Game',
+        description:'Custom Tree AI/MODEL Algorithms & Parallel Programming to  simulate / play Naija Whot (African Card Game) - Similar to Uno Card Game',
         long_description:'Custom Built Random Forest + Decision Tree AI Algoritmns & Parallel Programming to  simulate / play Naija Whot (African Card Game) - Similar to Uno Card Game',
         slug:'whotai',
         languages:['Python'],
@@ -86,6 +97,16 @@ const projects = [
         sourcecode:'https://github.com/Tarleton-RocketTeam/TARPayload'
     },
     {
+        title: "Slic",
+        description:"SLIC (Swift Low-latency Intercommunication) simplifies client-server communication using tcp / p2p protocols while focusing on latency reduction through low-latency intercommunication techniques. By optimizing network protocols, minimizing data processing overhead, with optimized algorithms for data serialization and deserialization, reducing processing overhead and improving efficiency. Alternative to REST API Architectures.",
+        long_description:'SLIC (Swift Low-latency Intercommunication) simplifies client-server communication using tcp / p2p protocols while focusing on latency reduction through low-latency intercommunication techniques. By optimizing network protocols, minimizing data processing overhead, with optimized algorithms for data serialization and deserialization, reducing processing overhead and improving efficiency, while offering built-in capabilities like rate limiting and network traffic management for enhanced network efficiency and seamless data exchange to ensure faster response times, reduced communication delays, and enhanced overall performance in latency-sensitive applications.',
+        slug:'slic',
+        languages:['Python'],
+        tags:['Networking & Cloud Computing','Algorithms / Dynamical Programming','Libraries / Packages / Modules / Applications / Frameworks'],
+        sourcecode:'https://github.com/teddyoweh/SLIC',
+        pypipackge:'pypi.org/project/slicpy/'
+    },
+    {
         title: "Omark",
         description:'Omarke is a facial recognition system that incorporates a binary search algorithm to efficiently search for absent faces in pictures based on a given dataset. It employs a state-of-the-art facial recognition model for identifying individuals, leveraging its advanced capabilities to provide accurate and reliable results. The use of binary search further optimizes the process, allowing for faster and more efficient searches.',
         long_description:'Omarke is a facial recognition system that incorporates a binary search algorithm to efficiently search for absent faces in pictures based on a given dataset. It employs a state-of-the-art facial recognition model for identifying individuals, leveraging its advanced capabilities to provide accurate and reliable results. The use of binary search further optimizes the process, allowing for faster and more efficient searches.',
@@ -101,7 +122,10 @@ const projects = [
         long_description:'Developed a Cosine Similarity-Based Code Comparison Tool, while i was a student tutor/grader at my university to analyze if students copied code and changed portions of the code and variable names ',
         slug:'codematch',
         languages:['Python','Next JS','Javascript'],
-        tags:['Machine Learning / Artificial Intelligence','Algorithms / Dynamical Programming','Libraries / Packages / Modules / Applications / Frameworks','Frontend & UI Development']
+        tags:['Machine Learning / Artificial Intelligence','Algorithms / Dynamical Programming','Libraries / Packages / Modules / Applications / Frameworks','Frontend & UI Development'],
+        sourcecode:'https://github.com/teddyoweh/CodeMatch',
+        website:'https://code-match-one.vercel.app'
+
 
     },
     {
@@ -110,7 +134,8 @@ const projects = [
         long_description:'Distributed P2P File Transfer Protocol over TCP Network',
         slug:'bearftp',
         languages:['Python','Shell'],
-        tags:['Networking & Cloud Computing']
+        tags:['Networking & Cloud Computing'],
+        sourcecode:'https://github.com/teddyoweh/BearFTP'
     },
     {
         title: "Fitness Training Website - 7 Trials Strength Training",
@@ -118,7 +143,9 @@ const projects = [
         long_description:'Designed a Fitness Training Website for a Client ',
         slug:'7trialstrength',
         languages:['Next JS','Javascript'],
-        tags:['Frontend & UI Development','Full Stack Development','Libraries / Packages / Modules / Applications / Frameworks']
+        tags:['Frontend & UI Development','Full Stack Development','Libraries / Packages / Modules / Applications / Frameworks'],
+        source:'https://github.com/teddyoweh/7trialsstrengthtraining.com',
+        website:'https://7trialsstrength.com/'
     },
     {
         title: "Fitness Training Website Backend - 7 Trials Strength Training",
@@ -126,7 +153,8 @@ const projects = [
         long_description:'Backend Microservice & Payment Gateway System for 7 Trials Strength Training Website ',
         slug:'7trialstrengthbackend',
         languages:['Nest JS','Javascript','Node JS'],
-        tags:['Microservice / Backend Systems','Database Systems','Full Stack Development','Libraries / Packages / Modules / Applications / Frameworks']
+        tags:['Microservice / Backend Systems','Database Systems','Full Stack Development','Libraries / Packages / Modules / Applications / Frameworks'],
+        sourcecode:'https://github.com/teddyoweh/7TrialsStrengthTraining.com-backend'
     },
     {
         title: "Battle of the Dorms Website",
