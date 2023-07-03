@@ -104,7 +104,7 @@ const projects = [
         languages:['Python'],
         tags:['Networking & Cloud Computing','Algorithms / Dynamical Programming','Libraries / Packages / Modules / Applications / Frameworks'],
         sourcecode:'https://github.com/teddyoweh/SLIC',
-        pypipackge:'pypi.org/project/slicpy/'
+        pypipackge:'https://pypi.org/project/slicpy/'
     },
     {
         title: "Omark",
