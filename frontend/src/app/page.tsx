@@ -27,6 +27,7 @@ export default function Home() {
           <br />
           <p>
          AI/ML Intern <a href="https://apple.com">@Apple <span>↗</span></a>.
+        Prev Research Payload Engineer <a href="https://www.nasa.gov/">@NASA <span>↗</span></a>.
           Lead Student Researcher <a href="https://tarleton.edu">@Tarleton State - Machine Intelligence Security and Research Lab  <span>↗</span> </a>,
           Computational Modelling Researcher  <a href="https://www.tarleton.edu/tiaer">@TIAER - Texas Insititute Applied For Environment Research  <span>↗</span> </a>. 
 
