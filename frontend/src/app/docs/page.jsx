@@ -12,6 +12,8 @@ import { usePathname,useRouter } from 'next/navigation';
 import badgeres from '../assets/badge.jpeg'
 import {docs} from './page-data'
 export default function Docs(){
+    const pathname = usePathname();
+    const router = useRouter();
     return (
         <div className='page'>
             <head>
@@ -46,7 +48,7 @@ export default function Docs(){
                                         {doc.desc}
                                     </p>
                                     <div className='doc-btn'>
-                                        <a href={doc.link} target='_blank'>View Document <span>↗</span></a>
+                                        <a  onClick={()=>router.push(`${pathname}/${doc.slug}`)} target='_blank'>View Document <span>↗</span></a>
                                     </div>
                                    
                                 </div>

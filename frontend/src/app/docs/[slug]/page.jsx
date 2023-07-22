@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import teddyimg from '../../assets/teddy.jpeg'
 import NavigationBar from '../../components/NavigationBar' 
 import Footer from '../../components/Footer'
@@ -11,6 +11,7 @@ import nasares from '../../assets/nasares.jpeg'
 import { usePathname,useRouter } from 'next/navigation';
 import badgeres from '../../assets/badge.jpeg'
 import {docs} from '../page-data'
+ 
 export default function DocsPage({params}){
     const router = useRouter();
 
@@ -21,11 +22,13 @@ export default function DocsPage({params}){
     }
     const { slug } = params
     const data = getDocBySlug(slug)
-
+ 
 
     return (
         <div className='page'>
             <NavigationBar/>
+           <iframe src={data.src}/>
+
         </div>
     )
 }
