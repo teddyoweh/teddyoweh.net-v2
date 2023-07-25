@@ -14,7 +14,7 @@ import navyai from '../assets/navyai.png'
 import navymsr from '../assets/navymarkup.jpeg'
 const researches = [
     {
-        title:'Disease Spread using Stochastic Processes on Networks and Differential Equations.',
+        title:'Unraveling the Dynamics of Disease Propagation: Stochastic Processes on Networks and Differential Equation Approach',
         desc:'Leveraged stochastic processes on networks using differential equations to determine disease susceptibility rates and recovery probabilities, employing sophisticated mathematical and epidemiological models for better analysis and modelling of infectious diseases spread.',
         long_desc:'Leveraged stochastic processes on networks using differential equations to determine disease susceptibility rates and recovery probabilities, employing sophisticated mathematical and epidemiological models for better analysis and modelling of infectious diseases spread.',
         slug:'stochastic-processes',
