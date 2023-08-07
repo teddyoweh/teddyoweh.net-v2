@@ -2,12 +2,15 @@ import Image from 'next/image'
 
 import NavigationBar from './components/NavigationBar'
 import Footer from './components/Footer'
+import teddy from './assets/memojo.png';
+
 export default function Home() {
+ 
   return (
   <>
       <div className='page'>
         <NavigationBar />
-
+      <Image className='hero-image' src ={teddy.src} width={0} height={0} alt="Teddy Oweh" />
 
       <div className='hero slide-up'>
         <div className='hero-content'>
