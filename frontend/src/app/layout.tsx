@@ -30,8 +30,10 @@ export default function RootLayout({
       <head>
       <title>Teddy Oweh - Software Engineer (ML)</title>
       {/* <link rel="icon" href={logo.src} sizes='80x80' /> */}
+      <meta name="google-site-verification" content="y1iOaVdSYWhaKVpLh-rmhnUzFcRFMgjberJk_ULj32E" />
       <meta property="og:title" content="Teddy Oweh - Software Engineer (ML)" />
     <meta property="og:type" content="website" />
+    <link rel="icon" href={logo.src} sizes='80x80' />
     <meta property="og:url" content="https://teddyoweh.net" />
     <meta property="og:image" content={teddyimg.src} />
     <meta property="og:description" content="Software Engineer (ML), CS (Artificial Intelligence & Data Science) + Math." />
