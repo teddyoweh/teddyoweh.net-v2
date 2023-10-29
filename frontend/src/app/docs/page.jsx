@@ -48,7 +48,8 @@ export default function Docs(){
                                         {doc.desc}
                                     </p>
                                     <div className='doc-btn'>
-                                        <a  onClick={()=>router.push(`${pathname}/${doc.slug}`)} target='_blank'>View Document <span>↗</span></a>
+                                   
+                                        <a  onClick={()=>location.href='doc.src'} target='_blank'>View Document <span>↗</span></a>
                                     </div>
                                    
                                 </div>

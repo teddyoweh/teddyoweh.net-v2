@@ -3,6 +3,32 @@ import Image from 'next/image'
 import NavigationBar from './components/NavigationBar'
 import Footer from './components/Footer'
 import teddy from './assets/memojo.png';
+import { readdir } from 'fs/promises';
+import { join } from 'path';
+
+async function listFilesInDirectory(directoryPath) {
+  try {
+    const files = await readdir(directoryPath);
+
+    const fileNames = [];
+
+    for (const file of files) {
+      const filePath = join(directoryPath, file);
+
+      // Check if the file is a regular file (not a directory)
+      const fileStat = await stat(filePath);
+      if (fileStat.isFile()) {
+        fileNames.push(file);
+      }
+    }
+
+    return fileNames;
+  } catch (error) {
+    throw error;
+  }
+}
+
+// Usage
 
 export default function Home() {
  
