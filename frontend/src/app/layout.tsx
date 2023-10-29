@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
       <title>Teddy Oweh - Software Engineer (ML)</title>
       {/* <link rel="icon" href={logo.src} sizes='80x80' /> */}
-      <script async src="https://analytics.eu.umami.is/script.js" data-website-id="682e641c-21a6-465c-9d4b-a5e4f8fe26bc"></script>
+      <script async src="https://analytics.eu.umami.is/script.js" data-website-id="682e641c-21a6-465c-9d4b-a5e4f8fe26bc"></script>x
       <meta name="google-site-verification" content="y1iOaVdSYWhaKVpLh-rmhnUzFcRFMgjberJk_ULj32E" />
       <meta property="og:title" content="Teddy Oweh - Software Engineer (ML)" />
     <meta property="og:type" content="website" />
