@@ -56,9 +56,9 @@ export default function Home() {
             <a href="mailto:teddyoweh@gmail.com">
             <i className='bx bxs-envelope' ></i>
             </a>
-              <a href="https://resume.teddyoweh.net">
+              {/* <a href="https://resume.teddyoweh.net">
               <i className='bx bx-file'></i>
-              </a>
+              </a> */}
           </div>
         </div>
         <Footer/>
