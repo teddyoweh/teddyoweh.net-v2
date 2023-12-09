@@ -1,5 +1,5 @@
 "use client"
-import teddyimg from '../assets/oweh.jpg'
+import teddyimg from '../assets/oweh.jpeg'
 import NavigationBar from '../components/NavigationBar' 
 import Footer from '../components/Footer'
 import Image from 'next/image'
@@ -28,6 +28,9 @@ export default function AboutPage() {
                 <div className='about-content'>
                     <div className='about-img'>
                         <img src={teddyimg.src} alt='Teddy Oweh'/>
+                        <label htmlFor="">
+                            Apple HQ, Cupertino, California  / <a target='_blank'href="https://www.youtube.com/watch?v=FzcfZyEhOoI">Apple Park<span>↗</span></a>
+                        </label>
                     </div>
                     <div className="about-teddy">
                         <p>
