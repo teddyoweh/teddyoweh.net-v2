@@ -49,7 +49,7 @@ export default function Docs(){
                                     </p>
                                     <div className='doc-btn'>
                                    
-                                        <a  onClick={()=>location.href='doc.src'} target='_blank'>View Document <span>↗</span></a>
+                                        <a  href={doc.src}   target='_blank'>View Document <span>↗</span></a>
                                     </div>
                                    
                                 </div>

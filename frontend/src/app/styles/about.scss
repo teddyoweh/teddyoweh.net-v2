@@ -56,9 +56,18 @@ padding-top: 50px;
             text-align: right;
             a{
                 border-style: solid;
-    border-width: 0px 0px 1px;
-    border-color: #222;
-    transition: 0.4s;
+                border-width: 0px 0px 1px;
+                border-color: #222;
+                transition: 0.4s;
+                &:hover{
+                    transition: 0.4s;
+                    border-width: 0px 0px 2px;
+                    border-color: #333;
+                }
+                span{
+                    font-size: 14px;
+                    font-family: system-ui;
+                }
             }
         }
     }
